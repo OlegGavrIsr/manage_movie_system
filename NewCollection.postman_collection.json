@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "a6435b7e-6c86-4ef8-a3a2-09c970a46111",
+		"name": "NewCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11882185"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8080/auth/signup for ADMIN",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Hayim\",\r\n    \"password\":\"hayim123\",\r\n    \"email\":\"hayim@gmail.com\",\r\n    \"role\":\"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/auth/signup",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/auth/signup for CUSTOMER",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Avi\",\r\n    \"password\":\"avi123\",\r\n    \"email\":\"avi@gmail.com\",\r\n    \"role\":\"CUSTOMER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/auth/signup",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/movies/11222 getMovieById for ADMIN User only",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/movies/11122",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"11122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/movies getAllMovies for ADMIN User only",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/movies",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/movies create a new Movie for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Titanic\",\r\n    \"genre\":\"DRAMA\",\r\n    \"duration\": \"2\",\r\n    \"rating\":\"5\",\r\n    \"release_year\":\" 2020-12-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/movies",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/movies/11222 Update Movie for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"UpdateTitle\",\r\n    \"genre\":\"DRAMA\",\r\n    \"duration\": \"2\",\r\n    \"rating\":\"5\",\r\n    \"release_year\":\" 2020-12-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/movies/11222",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"11222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/movies/11222 Delete Movie for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/movies/11222",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"11222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/showtime/22333 get Showtime by Id for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/showtime/22333",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"showtime",
+						"22333"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/showtime/byMovie/Titanic get list of Showtimes by Movie Title for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/showtime/byMovie/Titanic",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"showtime",
+						"byMovie",
+						"Titanic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/showtime/byTheater/CinemaCity get list of Showtimes by Theater Name for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/showtime/byTheater/CinemaCity",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"showtime",
+						"byTheater",
+						"CinemaCity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/showtime create a new Showtime for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\":\"11222\",\r\n    \"theater\":\"CinemaCity\",\r\n    \"start_time\": \"2020-12-28 12:30\",\r\n    \"end_time\":\"2020-12-28 14:30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/showtime",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"showtime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/showtime/22333 Update Showtime for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\":\"1122255555\",\r\n    \"theater\":\"CinemaCity\",\r\n    \"start_time\": \"2020-12-28 12:30\",\r\n    \"end_time\":\"2020-12-28 14:30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/showtime/22333",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"showtime",
+						"22333"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/showtime/22333 Delete Showtime for ADMIN User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordAdmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/showtime/22333",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"showtime",
+						"22333"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/booking create a new Book for CUSTOMER User only",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "passwordCustomer",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "customerUser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\":\"11222\",\r\n    \"showtimeId\":\"22333\",\r\n    \"seat_number\": \"99\",\r\n    \"price\":\"50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/movies",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

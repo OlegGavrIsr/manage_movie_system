@@ -51,7 +51,7 @@ public class ShowtimeController {
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping("/byMovie/{id}")
+    @GetMapping("/byMovie/{title}")
     public ResponseEntity<List<Showtime>> getShowtimesByMovieTitle(@PathVariable String title) {
         List<Showtime> showtimes = showtimeService.getShowtimesByMovieTitle(title);
         if (showtimes != null && !showtimes.isEmpty()) {

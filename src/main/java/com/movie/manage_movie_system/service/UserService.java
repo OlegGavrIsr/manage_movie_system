@@ -4,7 +4,6 @@ import com.movie.manage_movie_system.dto.request.UserEntryDto;
 import com.movie.manage_movie_system.model.User;
 import com.movie.manage_movie_system.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
